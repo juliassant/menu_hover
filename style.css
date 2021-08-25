@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+nav{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(179, 174, 174);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: chartreuse;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #ffff;
+}
+
+a:hover:after{
+    width: 100%;
+    
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
